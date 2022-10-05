@@ -5,11 +5,11 @@ public class Radio {
     private int stationNumber = stationCount / 2;
     private int volume = 50;
 
-    public Radio(){
+    public Radio() {
 
     }
 
-    public Radio(int count){
+    public Radio(int count) {
         this.stationCount = count;
         this.stationNumber = stationCount / 2;
     }
@@ -22,10 +22,14 @@ public class Radio {
         return stationNumber;
     }
 
-
     public int getVolume() {
         return volume;
     }
+
+    public void setStationCount(int count) {
+        stationCount = count;
+    }
+
 
     public void setStationNumber(int number) {
         if ((number >= 0) && (number <= stationCount - 1)) {
